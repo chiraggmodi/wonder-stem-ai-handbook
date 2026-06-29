@@ -1,0 +1,172 @@
+site_name: Wonder STEM AI Handbook
+site_description: Production-ready AI workflows, Gemini Gems, and prompt engineering for STEM content creation.
+site_author: Chirag Modi
+site_url: https://chiragmodi.com
+
+repo_name: wonder-stem-ai-handbook
+repo_url: https://github.com/chiraggmodi/wonder-stem-ai-handbook
+
+copyright: Copyright © 2026 Wonder STEM
+
+theme:
+name: material
+
+language: en
+
+palette:
+- scheme: default
+primary: indigo
+accent: cyan
+toggle:
+icon: material/weather-night
+name: Switch to dark mode
+
+```
+- scheme: slate
+  primary: indigo
+  accent: cyan
+  toggle:
+    icon: material/weather-sunny
+    name: Switch to light mode
+```
+
+features:
+- navigation.instant
+- navigation.instant.progress
+- navigation.instant.preview
+- navigation.tabs
+- navigation.sections
+- navigation.expand
+- navigation.top
+- navigation.footer
+- navigation.indexes
+- navigation.tracking
+
+```
+- search.highlight
+- search.suggest
+- search.share
+
+- content.code.copy
+- content.code.annotate
+- content.tabs.link
+- content.action.edit
+- content.action.view
+```
+
+icon:
+repo: fontawesome/brands/github
+
+markdown_extensions:
+
+* admonition
+
+* attr_list
+
+* def_list
+
+* footnotes
+
+* md_in_html
+
+* tables
+
+* toc:
+  permalink: true
+
+* pymdownx.highlight:
+  anchor_linenums: true
+
+* pymdownx.superfences
+
+* pymdownx.inlinehilite
+
+* pymdownx.snippets
+
+* pymdownx.tabbed:
+  alternate_style: true
+
+* pymdownx.details
+
+* pymdownx.emoji:
+  emoji_index: !!python/name:material.extensions.emoji.twemoji
+  emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+
+* search
+
+extra:
+social:
+- icon: fontawesome/brands/github
+link: https://github.com/chiraggmodi
+
+```
+- icon: fontawesome/brands/youtube
+  link: https://youtube.com/@wonderstem
+
+- icon: fontawesome/brands/x-twitter
+  link: https://x.com/
+```
+
+nav:
+
+* Home: index.md
+
+* Getting Started:
+
+  * Introduction: getting-started/introduction.md
+  * Installation: getting-started/installation.md
+  * Repository Structure: getting-started/repository-structure.md
+
+* Gemini Gems:
+
+  * Overview: gems/index.md
+  * Research Gem: gems/research.md
+  * Topic Evaluation: gems/topic-evaluation.md
+  * Outline Generator: gems/outline.md
+  * Script Writer: gems/script.md
+  * Fact Checker: gems/fact-checker.md
+  * Visual Planner: gems/visual-planner.md
+  * Publishing Assistant: gems/publishing.md
+
+* Prompt Engineering:
+
+  * Overview: prompts/index.md
+  * Design Principles: prompts/design-principles.md
+  * Prompt Templates: prompts/templates.md
+  * Best Practices: prompts/best-practices.md
+  * Anti-Patterns: prompts/anti-patterns.md
+
+* Workflows:
+
+  * Overview: workflows/index.md
+  * Educational Pipeline: workflows/education.md
+  * Video Production: workflows/video.md
+  * Shorts Pipeline: workflows/shorts.md
+
+* Reliability:
+
+  * Empty Response Error: reliability/empty-response.md
+  * Context Overflow: reliability/context-overflow.md
+  * Token Limits: reliability/token-limits.md
+  * Retry Strategy: reliability/retry-strategy.md
+  * Troubleshooting: reliability/troubleshooting.md
+
+* Examples:
+
+  * Example Projects: examples/index.md
+  * STEM Video: examples/stem-video.md
+  * Research Workflow: examples/research.md
+
+* Resources:
+
+  * AI Tools: resources/tools.md
+  * Glossary: resources/glossary.md
+  * References: resources/references.md
+
+* Contributing:
+
+  * Contributing: contributing.md
+  * Roadmap: roadmap.md
+  * Changelog: changelog.md
