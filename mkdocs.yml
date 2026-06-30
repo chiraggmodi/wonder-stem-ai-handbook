@@ -1,172 +1,190 @@
-site_name: Wonder STEM AI Handbook
-site_description: Production-ready AI workflows, Gemini Gems, and prompt engineering for STEM content creation.
-site_author: Chirag Modi
-site_url: https://chiragmodi.com
+site_name: Wonder STEM Factory
+site_description: >
+  Production-ready AI workflow for research, scripting,
+  production, and publishing educational STEM videos.
 
-repo_name: wonder-stem-ai-handbook
+site_author: Chirag Modi
+site_url: https://chiragmodi.github.io/wonder-stem-ai-handbook/
+
+repo_name: chiraggmodi/wonder-stem-ai-handbook
 repo_url: https://github.com/chiraggmodi/wonder-stem-ai-handbook
+
+edit_uri: edit/main/docs/
 
 copyright: Copyright © 2026 Wonder STEM
 
 theme:
-name: material
+  name: material
+  language: en
 
-language: en
+  logo: assets/logo.png
+  favicon: assets/favicon.png
 
-palette:
-- scheme: default
-primary: indigo
-accent: cyan
-toggle:
-icon: material/weather-night
-name: Switch to dark mode
+  icon:
+    repo: fontawesome/brands/github
 
-```
-- scheme: slate
-  primary: indigo
-  accent: cyan
-  toggle:
-    icon: material/weather-sunny
-    name: Switch to light mode
-```
+  palette:
 
-features:
-- navigation.instant
-- navigation.instant.progress
-- navigation.instant.preview
-- navigation.tabs
-- navigation.sections
-- navigation.expand
-- navigation.top
-- navigation.footer
-- navigation.indexes
-- navigation.tracking
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
 
-```
-- search.highlight
-- search.suggest
-- search.share
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
-- content.code.copy
-- content.code.annotate
-- content.tabs.link
-- content.action.edit
-- content.action.view
-```
+  features:
 
-icon:
-repo: fontawesome/brands/github
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.path
+
+    - search.highlight
+    - search.suggest
+    - search.share
+
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+
+plugins:
+  - search
 
 markdown_extensions:
 
-* admonition
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
 
-* attr_list
+  - toc:
+      permalink: true
 
-* def_list
+  - pymdownx.highlight:
+      anchor_linenums: true
 
-* footnotes
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
-* md_in_html
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
 
-* tables
+  - pymdownx.tabbed:
+      alternate_style: true
 
-* toc:
-  permalink: true
+  - pymdownx.details
 
-* pymdownx.highlight:
-  anchor_linenums: true
-
-* pymdownx.superfences
-
-* pymdownx.inlinehilite
-
-* pymdownx.snippets
-
-* pymdownx.tabbed:
-  alternate_style: true
-
-* pymdownx.details
-
-* pymdownx.emoji:
-  emoji_index: !!python/name:material.extensions.emoji.twemoji
-  emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-plugins:
-
-* search
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra:
-social:
-- icon: fontawesome/brands/github
-link: https://github.com/chiraggmodi
 
-```
-- icon: fontawesome/brands/youtube
-  link: https://youtube.com/@wonderstem
+  social:
 
-- icon: fontawesome/brands/x-twitter
-  link: https://x.com/
-```
+    - icon: fontawesome/brands/github
+      link: https://github.com/chiraggmodi
+
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/@wonderstem
+
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/
+
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
 
-* Home: index.md
+  - Home: index.md
 
-* Getting Started:
+  - Getting Started:
+      - Introduction: getting-started/introduction.md
+      - Installation: getting-started/installation.md
+      - Repository Structure: getting-started/repository-structure.md
+      - Workflow Overview: getting-started/workflow-overview.md
 
-  * Introduction: getting-started/introduction.md
-  * Installation: getting-started/installation.md
-  * Repository Structure: getting-started/repository-structure.md
+  - Wonder STEM Factory:
+      - Overview: factory/index.md
+      - Architecture: factory/architecture.md
+      - Workflow Diagram: factory/workflow.md
+      - Artifact Flow: factory/artifacts.md
 
-* Gemini Gems:
+  - AI Agents:
 
-  * Overview: gems/index.md
-  * Research Gem: gems/research.md
-  * Topic Evaluation: gems/topic-evaluation.md
-  * Outline Generator: gems/outline.md
-  * Script Writer: gems/script.md
-  * Fact Checker: gems/fact-checker.md
-  * Visual Planner: gems/visual-planner.md
-  * Publishing Assistant: gems/publishing.md
+      - Phase 1 · Discovery:
+          - Topic Assessment: agents/topic-assessment.md
 
-* Prompt Engineering:
+      - Phase 2 · Knowledge:
+          - Research Brief: agents/research-brief.md
 
-  * Overview: prompts/index.md
-  * Design Principles: prompts/design-principles.md
-  * Prompt Templates: prompts/templates.md
-  * Best Practices: prompts/best-practices.md
-  * Anti-Patterns: prompts/anti-patterns.md
+      - Phase 3 · Story Development:
+          - Blueprint Handoff: agents/blueprint-handoff.md
+          - Draft Script: agents/draft-script.md
 
-* Workflows:
+      - Phase 4 · Quality Assurance:
+          - Verification Report: agents/verification-report.md
+          - Audit Report: agents/audit-report.md
+          - Revised Script: agents/revised-script.md
 
-  * Overview: workflows/index.md
-  * Educational Pipeline: workflows/education.md
-  * Video Production: workflows/video.md
-  * Shorts Pipeline: workflows/shorts.md
+      - Phase 5 · Production:
+          - Thumbnail & Title Optimizer: agents/thumbnail-title.md
+          - Production Planner: agents/production-planner.md
+          - Scene Breakdown Generator: agents/scene-breakdown.md
+          - Google Flow Prompt Generator: agents/google-flow-prompt-generator.md
+          - Production Manifest Generator: agents/production-manifest.md
 
-* Reliability:
+      - Phase 6 · Publishing:
+          - Publishing Package: agents/publishing-package.md
 
-  * Empty Response Error: reliability/empty-response.md
-  * Context Overflow: reliability/context-overflow.md
-  * Token Limits: reliability/token-limits.md
-  * Retry Strategy: reliability/retry-strategy.md
-  * Troubleshooting: reliability/troubleshooting.md
+  - Prompt Library:
+      - Overview: prompts/index.md
+      - Prompt Standards: prompts/standards.md
+      - Prompt Metadata: prompts/metadata.md
+      - Versioning: prompts/versioning.md
 
-* Examples:
+  - Architecture:
+      - Agent Contracts: architecture/agent-contracts.md
+      - Artifact Contracts: architecture/artifact-contracts.md
+      - Variables: architecture/variables.md
+      - Design Decisions: architecture/design-decisions.md
 
-  * Example Projects: examples/index.md
-  * STEM Video: examples/stem-video.md
-  * Research Workflow: examples/research.md
+  - Reliability:
+      - Gemini Empty Response: reliability/empty-response.md
+      - Context Overflow: reliability/context-overflow.md
+      - Token Limits: reliability/token-limits.md
+      - Retry Strategy: reliability/retry-strategy.md
+      - Troubleshooting: reliability/troubleshooting.md
 
-* Resources:
+  - Examples:
+      - Overview: examples/index.md
+      - End-to-End Workflow: examples/full-workflow.md
+      - Earthquake Example: examples/earthquake.md
+      - Black Hole Example: examples/black-hole.md
 
-  * AI Tools: resources/tools.md
-  * Glossary: resources/glossary.md
-  * References: resources/references.md
-
-* Contributing:
-
-  * Contributing: contributing.md
-  * Roadmap: roadmap.md
-  * Changelog: changelog.md
+  - Project:
+      - Roadmap: roadmap.md
+      - Changelog: changelog.md
+      - Contributing: contributing.md
