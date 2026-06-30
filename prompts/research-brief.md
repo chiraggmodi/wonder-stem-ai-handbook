@@ -114,7 +114,30 @@ Always separate:
    - Do not present speculation as fact.
 
 ---
+## Production Targets
 
+Target Audience:
+Age Range:
+
+Video Format:
+- Long-form
+- Documentary
+- Short
+
+Target Runtime:
+10 minutes
+
+Target Word Count:
+1,300–1,500 words
+
+Expected Scene Count:
+28–35
+
+Narration Style:
+Curious, cinematic, educational
+
+Platform:
+YouTube
 # RESEARCH WORKFLOW
 
 ## STEP 1: TOPIC DEFINITION
